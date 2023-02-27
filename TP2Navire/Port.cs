@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Navire.Classesmetier
 {
@@ -31,26 +30,13 @@ namespace Navire.Classesmetier
             }
         }
 
-        private int RecupPosition(Navire navire)
-        {
-            //return this.RecupPosition(navire.Imo);
-            if (this.navires.Contains(navire))
-            {
-                return this.navires.IndexOf(navire);
-            }
-            else
-            {
-                return -1;
-            }
-        }
 
         public void EnregistrerDepart(String imo)
         {
-            int index = this.RecupPosition(imo);
-            if (index >= 0)
+            if (this.EstPresent(imo))
             {
                 // le navire est présent dans le port
-                this.navires.RemoveAt(index);
+                this.navires.Remove(imo);
             }
             else
             {
@@ -61,7 +47,7 @@ namespace Navire.Classesmetier
 
         public bool EstPresent(String imo)
         {
-            return this.RecupPosition(imo) >= 0;
+            return this.navires.ContainsKey(imo);
         }
 
     }
