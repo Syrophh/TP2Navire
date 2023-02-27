@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TP2Navire
+namespace Navire.Application
 {
     class Program
     {
