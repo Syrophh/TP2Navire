@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Navire.Classesmetier
+namespace GestionNavire.Classesmetier
 {
     class Port
     {

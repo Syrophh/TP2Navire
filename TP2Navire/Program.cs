@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Navire.Application
+namespace GestionNavire.Application
 {
     class Program
     {
