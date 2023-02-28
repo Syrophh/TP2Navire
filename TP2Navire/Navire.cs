@@ -16,7 +16,7 @@ namespace GestionNavire.Classesmetier
             this.imo = imo;
             this.nom = nom;
             this.libelleFret = libelleFret;
-            this.qteFretMaxi = qteFretMaxi;
+            this.QteFretMaxi = qteFretMaxi;
         }
         public Navire(string imo, string nom) : this(imo, nom, "Indéfini", 0) { }
 

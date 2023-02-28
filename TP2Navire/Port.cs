@@ -50,6 +50,21 @@ namespace GestionNavire.Classesmetier
             return this.navires.ContainsKey(imo);
         }
 
+        public int QteFretMaxi
+        {
+            get => QteFretMaxi;
+            set
+            {
+                if (value >= 0)
+                {
+                    this.QteFretMaxi = value;
+                }
+                else
+                {
+                    throw new Exception("Erreur, quantité de fret non valide");
+                }
+            }
+        }
     }
 }
 
